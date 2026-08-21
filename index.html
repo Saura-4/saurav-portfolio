@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurav Chourasia — Applied AI Engineer</title>
+  <meta name="description" content="Saurav Chourasia — Applied AI Engineer. RAG pipelines, LLM backends, and browser extensions that ship. FOSSEE Fellow @ IIT Bombay." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b0f14'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' fill='%232dd4bf' text-anchor='middle'%3ESC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">SC<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container">
+        <p class="hero-eyebrow reveal">Hi, my name is</p>
+        <h1 class="reveal">Saurav Chourasia<span class="accent">.</span></h1>
+        <h2 class="hero-sub reveal">I build <span class="accent-text">applied AI</span> systems.</h2>
+        <p class="hero-desc reveal">
+          B.Tech CSE (Cyber Security &amp; Digital Forensics) at VIT Bhopal '27 &middot;
+          FOSSEE Fellow @ IIT Bombay. I take AI from demo to deployment —
+          RAG pipelines, LLM backends, and browser extensions people actually use.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num">540+</span><span class="stat-label">users on Chrome Web Store</span></div>
+          <div class="stat"><span class="stat-num">IIT-B</span><span class="stat-label">FOSSEE Fellowship '26</span></div>
+          <div class="stat"><span class="stat-num">8.48</span><span class="stat-label">CGPA / 10</span></div>
+          <div class="stat"><span class="stat-num">Top 5%</span><span class="stat-label">NPTEL Blockchain</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title reveal"><span class="mono">01.</span> About Me</h3>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm an engineer who cares about making AI <em>actually work in production</em> —
+              not just in notebooks. My focus is applied AI: retrieval-augmented generation,
+              deterministic pipelines around probabilistic models, and evaluation frameworks
+              that tell you whether any of it is trustworthy.
+            </p>
+            <p>
+              At <strong>FOSSEE, IIT Bombay</strong>, I rebuilt an LLM chatbot's inference pipeline
+              so the model explains verified circuit analysis instead of guessing it. On my own time,
+              I built and shipped a Chrome extension with <strong>540+ organic users</strong> and a
+              production-grade chatbot backend with streaming, auth, and caching.
+            </p>
+            <p>
+              Currently pursuing my B.Tech at <strong>VIT Bhopal</strong>, always open to
+              internships and collaborations where AI meets real systems.
+            </p>
+          </div>
+          <div class="terminal reveal">
+            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">saurav_chourasia</p>
+              <p><span class="t-prompt">$</span> cat focus.txt</p>
+              <p class="t-out">["RAG", "LLM evaluation", "shipping"]</p>
+              <p><span class="t-prompt">$</span> uptime --coding</p>
+              <p class="t-out">since 2023 <span class="t-cursor">▊</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h3 class="section-title reveal"><span class="mono">02.</span> Experience</h3>
+        <div class="exp-card reveal">
+          <div class="exp-head">
+            <div>
+              <h4>Software Engineering Intern — eSim AI Chatbot</h4>
+              <p class="exp-org">FOSSEE Summer Fellowship &middot; IIT Bombay</p>
+            </div>
+            <div class="exp-meta">
+              <span class="badge">May – Jul 2026</span>
+              <span class="badge badge-dim">Remote</span>
+            </div>
+          </div>
+          <ul class="exp-list">
+            <li>Redesigned the chatbot inference pipeline by extracting <strong>deterministic circuit facts before LLM inference</strong>, replacing raw netlist-to-prompt processing with structured circuit analysis.</li>
+            <li>Built a rule-based <strong>NgSpice error analysis engine</strong> that prioritizes errors by causal dependency, identifying root causes before downstream failures.</li>
+            <li>Developed a fully <strong>offline circuit analysis pipeline</strong> generating deterministic circuit summaries without requiring an LLM.</li>
+            <li>Shifted the LLM's role from guessing circuit behavior to <strong>explaining verified analysis</strong> — reducing hallucinated reasoning and improving explanation reliability.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">LLM Pipelines</span><span class="tag">Rule-based Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="section-title reveal"><span class="mono">03.</span> Projects</h3>
+        <div class="projects">
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="folder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a class="ext-link" href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="Open project">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <h4>Modular RAG Evaluation Framework</h4>
+            <p>
+              A from-scratch RAG framework — no LangChain, no LlamaIndex — with interchangeable indexing,
+              chunking, retrieval, reranking, generation, and evaluation modules. Benchmarked 4 chunking
+              strategies against 4 retrieval pipelines on <strong>BEIR SciFact</strong>, implemented
+              Recall@k, Precision@k, MRR and NDCG@k from scratch, and evaluated CoVe, Cited-Span and
+              Abstain generation with a RAGTruth-inspired hallucination pipeline.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">Cross-Encoder Reranking</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="folder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saura-4/llm-chatbot" target="_blank" rel="noopener" aria-label="GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a class="ext-link" href="https://llm-chatbot-blush.vercel.app" target="_blank" rel="noopener" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <h4>LLM ChatBot Backend</h4>
+            <p>
+              Production-ready chat platform backend with authenticated multi-user conversations,
+              persistent history, and <strong>real-time SSE streaming</strong>. JWT auth, SQLAlchemy ORM,
+              Alembic migrations, conversation ownership validation, layered CRUD, Redis caching —
+              containerized with Docker and deployed.
+            </p>
+            <div class="tag-row">
+              <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Docker</span><span class="tag">JWT</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div class="folder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saura-4/Snip-Ask-Chrome-Extension" target="_blank" rel="noopener" aria-label="GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a class="ext-link" href="https://chromewebstore.google.com/detail/snip-ask-ai-screen-assist/bhbmfojjmimjpdkebhhipkffjkcglofo" target="_blank" rel="noopener" aria-label="Chrome Web Store">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <h4>Snip &amp; Ask</h4>
+            <p>
+              Published Chrome extension with <strong>540 organic users</strong>: snip any screen region
+              and get contextual AI help without leaving the page. Guest Mode runs on a self-hosted
+              Cloudflare Worker over Groq's free tier; Auto Mode performs OCR before inference, routes
+              text through lightweight models, and falls back to vision models only when needed.
+            </p>
+            <div class="tag-row">
+              <span class="tag">JavaScript</span><span class="tag">Chrome Extension</span><span class="tag">OCR</span><span class="tag">Multi-LLM APIs</span><span class="tag">Cloudflare Workers</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h3 class="section-title reveal"><span class="mono">04.</span> Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h5>Languages</h5>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h5>Backend</h5>
+            <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">JWT Auth</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h5>AI / LLM</h5>
+            <div class="tag-row"><span class="tag">RAG</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">Sentence Transformers</span><span class="tag">BM25</span><span class="tag">Cross-Encoder Reranking</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h5>Tools &amp; Platforms</h5>
+            <div class="tag-row"><span class="tag">Git</span><span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Cloudflare Workers</span><span class="tag">Chrome MV3</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <h3 class="section-title reveal"><span class="mono">05.</span> Achievements &amp; Certifications</h3>
+        <div class="ach-grid">
+          <div class="ach-card reveal">
+            <span class="ach-year">2026</span>
+            <h5>FOSSEE Summer Fellowship — IIT Bombay</h5>
+            <p>Nationally competitive open-source software fellowship. Completion certified.</p>
+          </div>
+          <div class="ach-card reveal">
+            <span class="ach-year">NPTEL</span>
+            <h5>Blockchain and its Applications</h5>
+            <p>Certified with <strong>Top 5%</strong> standing.</p>
+          </div>
+          <div class="ach-card reveal">
+            <span class="ach-year">Live</span>
+            <h5>Snip &amp; Ask on Chrome Web Store</h5>
+            <p>Published extension organically reaching <strong>540+ users</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3 class="section-title reveal"><span class="mono">06.</span> Contact</h3>
+        <h4 class="contact-head reveal">Let's build something real.</h4>
+        <p class="contact-desc reveal">
+          I'm open to internships, collaborations, and interesting problems in applied AI.
+          My inbox is always open.
+        </p>
+        <div class="reveal">
+          <a href="mailto:saurav04042004@gmail.com" class="btn btn-primary btn-lg">Say hello</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-socials">
+        <a href="https://github.com/Saura-4" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/saurav-chourasia" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+        </a>
+        <a href="https://leetcode.com/u/saura_4/" target="_blank" rel="noopener" aria-label="LeetCode">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.8 2.3a1.15 1.15 0 0 0-.16 1.62l6.13 6.83h-6.02a1.15 1.15 0 1 0 0 2.3h6.02l-6.13 6.83a1.15 1.15 0 0 0 1.72 1.53l6.9-7.68a1.15 1.15 0 0 0 0-1.54l-6.9-7.68a1.15 1.15 0 0 0-1.56-.21zM8.2 4.6a1.15 1.15 0 0 0-.82.34L1.3 11.23a1.15 1.15 0 0 0 0 1.54l6.08 6.29a1.15 1.15 0 0 0 1.66-1.6l-5.32-5.5 5.32-5.5A1.15 1.15 0 0 0 8.2 4.6z"/></svg>
+        </a>
+        <a href="mailto:saurav04042004@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+      </div>
+      <p>Designed &amp; built by Saurav Chourasia &middot; <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
