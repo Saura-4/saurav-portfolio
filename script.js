@@ -149,29 +149,6 @@ document.addEventListener("visibilitychange", () => {
 
 startBackground();
 
-/* ================= Typewriter ================= */
-
-const typed = document.getElementById("typed");
-
-if (typed && !reducedMotion) {
-  const phrases = ["systems that ship.", "RAG pipelines.", "LLM backends.", "browser extensions.", "eval frameworks."];
-  let pi = 0, ci = 0, deleting = false;
-
-  (function type() {
-    const word = phrases[pi];
-    typed.textContent = word.slice(0, ci);
-
-    let delay = deleting ? 38 : 72;
-    if (!deleting && ci === word.length) { delay = 1900; deleting = true; }
-    else if (deleting && ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; delay = 350; }
-    else ci += deleting ? -1 : 1;
-
-    setTimeout(type, delay);
-  })();
-} else if (typed) {
-  typed.textContent = "systems that ship.";
-}
-
 /* ================= Count-up stats ================= */
 
 const counters = document.querySelectorAll("[data-count]");
@@ -227,7 +204,7 @@ if (!reducedMotion && window.matchMedia("(pointer: fine)").matches) {
 /* ================= Spotlight on cards ================= */
 
 if (window.matchMedia("(pointer: fine)").matches) {
-  document.querySelectorAll(".box, .project-card, .project-featured, .skill-card, .contact-panel").forEach((card) => {
+  document.querySelectorAll(".box, .project-card, .project-featured, .skill-card").forEach((card) => {
     card.classList.add("spotlight");
     card.addEventListener("mousemove", (e) => {
       const r = card.getBoundingClientRect();

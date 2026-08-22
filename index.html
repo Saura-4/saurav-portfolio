@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saurav Chourasia — Applied AI Engineer</title>
-  <meta name="description" content="Saurav Chourasia — Applied AI Engineer. RAG pipelines, LLM backends, and browser extensions that ship. FOSSEE Fellow @ IIT Bombay." />
+  <title>Saurav Chourasia — Computer Science Student</title>
+  <meta name="description" content="Saurav Chourasia — CS student at VIT Bhopal. I like building things I don't know how to build yet: a Chrome extension with 540+ users, an eSim AI assistant at FOSSEE (IIT Bombay), a from-scratch RAG evaluation framework, and FastAPI backends." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000000'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' fill='%23e8e8e8' text-anchor='middle'%3ESC%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=5" />
 </head>
 <body>
 
@@ -19,13 +19,13 @@
 
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="logo">SC<span class="logo-dot">.</span></a>
+      <a href="#top" class="logo">Saurav<span class="logo-dot">.</span></a>
       <div class="nav-right">
         <nav class="nav-links" id="navLinks">
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#whats-next">What's next</a>
           <a href="#contact">Contact</a>
         </nav>
         <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
@@ -43,14 +43,13 @@
         <div>
           <p class="hero-eyebrow anim" style="--d:.05s">Hi, my name is</p>
           <h1 class="anim" style="--d:.15s">Saurav Chourasia<span class="accent">.</span></h1>
-          <p class="hero-role anim" style="--d:.25s">I build <span class="grad shimmer">applied AI</span><br /><span class="type-wrap"><span class="typed" id="typed"></span><span class="type-caret" aria-hidden="true"></span></span></p>
+          <p class="hero-role anim" style="--d:.25s">I like to <span class="grad">build stuff.</span></p>
           <p class="hero-desc anim" style="--d:.35s">
-            B.Tech CSE @ VIT Bhopal '27 &middot; FOSSEE Fellow @ IIT Bombay.
-            I take AI from demo to deployment — RAG pipelines, LLM backends,
-            and browser extensions people actually use.
+            Computer Science student at VIT Bhopal, exploring AI, backend systems,
+            and whatever catches my curiosity next.
           </p>
           <div class="hero-cta anim" style="--d:.45s">
-            <a href="#projects" class="btn btn-primary">See my work</a>
+            <a href="#projects" class="btn btn-primary">See what I've built</a>
             <a href="#contact" class="link-arrow">get in touch
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
             </a>
@@ -62,16 +61,16 @@
             <div class="terminal-body">
               <p><span class="t-prompt">$</span> whoami</p>
               <p class="t-out">saurav_chourasia</p>
-              <p><span class="t-prompt">$</span> cat focus.txt</p>
-              <p class="t-out">["RAG", "LLM evaluation", "shipping"]</p>
-              <p><span class="t-prompt">$</span> uptime --coding</p>
-              <p class="t-out">since 2023 <span class="t-cursor">▊</span></p>
+              <p><span class="t-prompt">$</span> cat starting-point.txt</p>
+              <p class="t-out">"i wonder if i can build this"</p>
+              <p><span class="t-prompt">$</span> ls learning/</p>
+              <p class="t-out">cs-fundamentals/ dsa/ backend/ agents/ <span class="t-cursor">▊</span></p>
             </div>
           </div>
           <div class="quick-stats anim" style="--d:.55s">
-            <div class="qs-box"><span class="qs-num" data-count="540" data-suffix="+">0</span><span class="qs-label">users on Chrome Web Store</span></div>
-            <div class="qs-box"><span class="qs-num">IIT-B</span><span class="qs-label">FOSSEE Fellowship '26</span></div>
-            <div class="qs-box"><span class="qs-num" data-count="8.48" data-decimals="2">0</span><span class="qs-label">CGPA / 10</span></div>
+            <div class="qs-box"><span class="qs-num" data-count="540" data-suffix="+">0</span><span class="qs-label">organic users on Snip &amp; Ask</span></div>
+            <div class="qs-box"><span class="qs-num">IIT-B</span><span class="qs-label">FOSSEE Fellow '26</span></div>
+            <a class="qs-box qs-link" href="Saurav_Chourasia_Resume.pdf" download><span class="qs-num">Resume ↓</span><span class="qs-label">download the PDF</span></a>
           </div>
         </div>
       </div>
@@ -81,40 +80,38 @@
       </a>
     </section>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Python</span><span>RAG Pipelines</span><span>FastAPI</span><span>Ollama</span><span>ChromaDB</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>TypeScript</span><span>Next.js</span><span>Cloudflare Workers</span><span>Chrome MV3</span><span>Linux</span><span>Git</span>
-        <span>Python</span><span>RAG Pipelines</span><span>FastAPI</span><span>Ollama</span><span>ChromaDB</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>TypeScript</span><span>Next.js</span><span>Cloudflare Workers</span><span>Chrome MV3</span><span>Linux</span><span>Git</span>
-      </div>
-    </div>
-
     <section id="about" class="section">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">01.</span> About Me<i class="rule"></i></h3>
+        <h3 class="section-title reveal"><span class="mono">01.</span> A little about me<i class="rule"></i></h3>
         <div class="bento">
 
           <div class="box box-bio reveal">
-            <h5>Applied AI, not demo AI.</h5>
+            <h5>I usually start with a question.</h5>
             <p>
-              I care about making AI <em>actually work in production</em> — retrieval-augmented
-              generation, deterministic pipelines around probabilistic models, and evaluation
-              frameworks that tell you whether any of it is trustworthy.
+              Sometimes it's <em>"I wonder if I can build this."</em> Sometimes it's
+              <em>"there has to be a better way to do this."</em>
             </p>
             <p>
-              At <strong>FOSSEE, IIT Bombay</strong>, I rebuilt an LLM chatbot's inference pipeline so the
-              model explains verified circuit analysis instead of guessing it. On my own time I ship
-              real products — a Chrome extension with <strong>540+ organic users</strong> and a
-              production-grade chatbot backend.
+              That's how most of my projects have started. I built Snip &amp; Ask because I thought
+              getting an answer to something on my screen should be easier. Working on an AI
+              assistant at FOSSEE made me curious about how we can make LLMs work with information
+              they can actually rely on. That led me into RAG, then backend engineering, and now
+              agents and CS fundamentals.
+            </p>
+            <p>
+              I learn best by building things myself. The goal isn't just to make something work,
+              but to understand why it works.
             </p>
           </div>
 
           <div class="box box-term reveal">
             <div class="terminal-bar"><span></span><span></span><span></span></div>
             <div class="terminal-body">
+              <p><span class="t-prompt">$</span> cat approach.md</p>
+              <p class="t-out">understand what's underneath.</p>
+              <p class="t-out">then build it.</p>
               <p><span class="t-prompt">$</span> ls interests/</p>
-              <p class="t-out">rag/  llm-eval/  pipelines/</p>
-              <p><span class="t-prompt">$</span> git log --oneline -1</p>
-              <p class="t-out">shipping something new every week</p>
+              <p class="t-out">retrieval/ evaluation/ backends/</p>
             </div>
           </div>
 
@@ -123,24 +120,6 @@
             <h5>B.Tech CSE '27</h5>
             <p>VIT Bhopal University &middot; Cyber Security &amp; Digital Forensics</p>
             <span class="pill">CGPA 8.48 / 10</span>
-          </div>
-
-          <div class="box box-leet reveal">
-            <div class="box-icon"><svg viewBox="0 0 24 24"><path d="M12 2v8m0 0 4-4m-4 4-4-4M4 16v2a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4v-2"/></svg></div>
-            <h5>Problem Solver</h5>
-            <p>Daily grind on LeetCode as <strong>saura_4</strong>.</p>
-            <a class="box-link" href="https://leetcode.com/u/saura_4/" target="_blank" rel="noopener">view profile
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
-            </a>
-          </div>
-
-          <div class="box box-store reveal">
-            <div class="box-icon"><svg viewBox="0 0 24 24"><path d="m12 2 2.9 6.26L21.5 9.27l-4.75 4.63 1.12 6.53L12 17.77l-5.87 3.09 1.12-6.53L2.5 9.27l6.6-1.01L12 2z"/></svg></div>
-            <h5>Shipped Product</h5>
-            <p><strong>Snip &amp; Ask</strong> — live on the Chrome Web Store with <strong>540+ organic users</strong>.</p>
-            <a class="box-link" href="https://chromewebstore.google.com/detail/snip-ask-ai-screen-assist/bhbmfojjmimjpdkebhhipkffjkcglofo" target="_blank" rel="noopener">visit store
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
-            </a>
           </div>
 
           <div class="box box-loc reveal">
@@ -153,9 +132,165 @@
       </div>
     </section>
 
-    <section id="experience" class="section section-alt">
+    <section id="projects" class="section section-alt">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">02.</span> Where I've Worked<i class="rule"></i></h3>
+        <h3 class="section-title reveal"><span class="mono">02.</span> Things I've Built<i class="rule"></i></h3>
+        <p class="section-sub reveal">Roughly in the order I built them. Each one exists because of what the previous one taught me.</p>
+
+        <article class="project-featured reveal">
+          <div class="pf-content">
+            <p class="project-meta">Chrome extension &middot; 540+ organic users</p>
+            <div class="project-top">
+              <div class="folder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saura-4/Snip-Ask-Chrome-Extension" target="_blank" rel="noopener" aria-label="GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a class="ext-link" href="https://chromewebstore.google.com/detail/snip-ask-ai-screen-assist/bhbmfojjmimjpdkebhhipkffjkcglofo" target="_blank" rel="noopener" aria-label="Chrome Web Store">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <h4>Snip &amp; Ask</h4>
+            <p>
+              This is where it started. I wanted to ask a question about something on my screen,
+              and the honest options were: screenshot it, save it, switch tabs, and re-explain the
+              context. So I built a Chrome extension that captures any region of the screen and
+              answers questions about it — without leaving the page.
+            </p>
+            <p>
+              The first version was just for me. Friends encouraged me to publish it, and it's now
+              live on the Chrome Web Store. Making it work for other people was the real education:
+              a Guest Mode with zero setup (backed by a Cloudflare Worker I run), bring-your-own-key
+              support for Groq, Gemini, OpenAI, OpenRouter and local Ollama, an Auto Mode that routes
+              around single-model rate limits, and on-device OCR with Tesseract.js so text-only
+              models can read screenshots.
+            </p>
+            <p class="p-note">the arc: idea &rarr; build &rarr; make it usable &rarr; other people use it.</p>
+            <div class="tag-row">
+              <span class="tag">JavaScript</span><span class="tag">Chrome MV3</span><span class="tag">Cloudflare Workers</span><span class="tag">Tesseract.js OCR</span>
+            </div>
+          </div>
+          <span class="ghost-num" aria-hidden="true">01</span>
+        </article>
+
+        <article class="project-featured reveal">
+          <div class="pf-content">
+            <p class="project-meta">FOSSEE Summer Fellowship &middot; IIT Bombay</p>
+            <div class="project-top">
+              <div class="folder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              </div>
+              <div class="project-links">
+                <a class="ext-link" href="https://fossee.in" target="_blank" rel="noopener" aria-label="FOSSEE, IIT Bombay">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <h4>eSim AI Assistant</h4>
+            <p>
+              At FOSSEE I worked on the eSim AI assistant, a chatbot that helps people debug
+              circuit simulations — and it's the project that changed how I think about LLM systems.
+            </p>
+            <p>
+              The existing approach leaned heavily on a local LLM to reason about circuit and
+              netlist information directly, which meant asking the model to guess facts it was
+              never given. I redesigned the pipeline the other way around: deterministic code
+              extracts the circuit facts first, and the LLM is handed verified facts to explain.
+              I also built a rule-based NgSpice error analyzer that prioritizes errors by causal
+              dependency, so root causes surface before the failures they trigger downstream.
+            </p>
+            <p class="p-note">what clicked: an LLM doesn't always need to reason itself — give it reliable information and let it explain.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">Rule-based Systems</span><span class="tag">LLM Pipelines</span>
+            </div>
+          </div>
+          <span class="ghost-num" aria-hidden="true">02</span>
+        </article>
+
+        <article class="project-featured reveal">
+          <div class="pf-content">
+            <p class="project-meta">RAG framework &middot; built from scratch</p>
+            <div class="project-top">
+              <div class="folder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a class="ext-link" href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="Open project">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <h4>Modular RAG Evaluation Framework</h4>
+            <p>
+              After eSim, I kept thinking about the same question in a more general form: how do
+              we give LLMs better information? I didn't want to build another RAG demo — I wanted
+              to understand retrieval itself, and you can't do that if you can't swap the parts.
+            </p>
+            <p>
+              So I built the framework from scratch — no LangChain, no LlamaIndex. Indexing,
+              chunking, retrieval, reranking, generation and evaluation are all interchangeable
+              modules. I used it to benchmark 4 chunking strategies against 4 retrieval pipelines
+              on <strong>BEIR SciFact</strong>, implementing Recall@k, Precision@k, MRR and
+              NDCG@k from scratch, and to compare generation strategies — CoVe, Cited-Span and
+              Abstain Generation — under a RAGTruth-inspired hallucination evaluation. Everything
+              runs locally on Ollama and ChromaDB, with cross-encoder reranking.
+            </p>
+            <p class="p-note">the point: change one component, measure, and actually see what happens.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">Cross-Encoder Reranking</span><span class="tag">BEIR SciFact</span>
+            </div>
+          </div>
+          <span class="ghost-num" aria-hidden="true">03</span>
+        </article>
+
+        <article class="project-featured reveal">
+          <div class="pf-content">
+            <p class="project-meta">Backend &middot; a learning project, on purpose</p>
+            <div class="project-top">
+              <div class="folder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Saura-4/llm-chatbot" target="_blank" rel="noopener" aria-label="GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a class="ext-link" href="https://llm-chatbot-saurav.vercel.app" target="_blank" rel="noopener" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+            <h4>LLM ChatBot Backend</h4>
+            <p>
+              This one isn't an AI breakthrough, and I won't pretend it is. After working on AI
+              systems, I realized I didn't understand the engineering underneath them well enough.
+              So I built a chatbot backend specifically to learn it — properly, piece by piece.
+            </p>
+            <p>
+              FastAPI and PostgreSQL with SQLAlchemy, JWT authentication, Alembic migrations, a
+              layered CRUD and service structure, conversation and message persistence, Redis
+              caching, and streaming responses over SSE — containerized with Docker and deployed.
+              The rule I set for myself: understand the mental model first, then write the code.
+            </p>
+            <p class="p-note">the engineering under an AI app, built by hand instead of assumed.</p>
+            <div class="tag-row">
+              <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">SSE Streaming</span><span class="tag">Docker</span>
+            </div>
+          </div>
+          <span class="ghost-num" aria-hidden="true">04</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h3 class="section-title reveal"><span class="mono">03.</span> Where I've Worked<i class="rule"></i></h3>
         <div class="timeline">
 
           <div class="tl-item reveal">
@@ -169,10 +304,10 @@
                 <span class="badge">May – Jul 2026 &middot; Remote</span>
               </div>
               <ul class="tl-list">
-                <li>Redesigned the chatbot inference pipeline by extracting <strong>deterministic circuit facts before LLM inference</strong>, replacing raw netlist-to-prompt processing with structured circuit analysis.</li>
+                <li>Redesigned the chatbot's inference pipeline by extracting <strong>deterministic circuit facts before LLM inference</strong>, replacing raw netlist-to-prompt processing with structured circuit analysis.</li>
                 <li>Built a rule-based <strong>NgSpice error analysis engine</strong> that prioritizes errors by causal dependency, identifying root causes before downstream failures.</li>
-                <li>Developed a fully <strong>offline circuit analysis pipeline</strong> generating deterministic circuit summaries without requiring an LLM.</li>
-                <li>Shifted the LLM's role from guessing circuit behavior to <strong>explaining verified analysis</strong> — reducing hallucinated reasoning and improving reliability.</li>
+                <li>Developed a fully <strong>offline circuit analysis pipeline</strong> that generates deterministic circuit summaries without requiring an LLM.</li>
+                <li>Shifted the LLM's role from guessing circuit behavior to <strong>explaining verified analysis</strong> — the model no longer had to guess factual circuit information, which made the reasoning pipeline more reliable.</li>
               </ul>
               <div class="tag-row">
                 <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">LLM Pipelines</span><span class="tag">Rule-based Systems</span>
@@ -200,101 +335,21 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="whats-next" class="section section-alt">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">03.</span> Things I've Built<i class="rule"></i></h3>
-
-        <article class="project-featured reveal">
-          <div class="pf-content">
-            <p class="project-meta">2026 &middot; Evaluation Framework</p>
-            <div class="project-top">
-              <div class="folder-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="GitHub repository">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                </a>
-                <a class="ext-link" href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="Open project">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
-                </a>
-              </div>
-            </div>
-            <h4>Modular RAG Evaluation Framework</h4>
-            <p>
-              A from-scratch RAG framework — no LangChain, no LlamaIndex — with interchangeable indexing,
-              chunking, retrieval, reranking, generation, and evaluation modules. Benchmarked 4 chunking
-              strategies against 4 retrieval pipelines on <strong>BEIR SciFact</strong>, implemented
-              Recall@k, Precision@k, MRR and NDCG@k from scratch, and evaluated CoVe, Cited-Span and
-              Abstain generation with a RAGTruth-inspired hallucination pipeline.
-            </p>
-            <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">Cross-Encoder Reranking</span>
-            </div>
-          </div>
-          <span class="ghost-num" aria-hidden="true">01</span>
-        </article>
-
-        <div class="projects-grid" data-stagger>
-          <article class="project-card reveal">
-            <p class="project-meta">2025 &middot; Backend Platform</p>
-            <div class="project-top">
-              <div class="folder-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Saura-4/llm-chatbot" target="_blank" rel="noopener" aria-label="GitHub repository">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                </a>
-                <a class="ext-link" href="https://llm-chatbot-blush.vercel.app" target="_blank" rel="noopener" aria-label="Live demo">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
-                </a>
-              </div>
-            </div>
-            <h4>LLM ChatBot Backend</h4>
-            <p>
-              Production-ready chat platform backend with authenticated multi-user conversations,
-              persistent history, and <strong>real-time SSE streaming</strong>. JWT auth, SQLAlchemy ORM,
-              Alembic migrations, layered CRUD, Redis caching — containerized with Docker and deployed.
-            </p>
-            <div class="tag-row">
-              <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Docker</span>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <p class="project-meta">2025 &middot; Chrome Extension</p>
-            <div class="project-top">
-              <div class="folder-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Saura-4/Snip-Ask-Chrome-Extension" target="_blank" rel="noopener" aria-label="GitHub repository">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                </a>
-                <a class="ext-link" href="https://chromewebstore.google.com/detail/snip-ask-ai-screen-assist/bhbmfojjmimjpdkebhhipkffjkcglofo" target="_blank" rel="noopener" aria-label="Chrome Web Store">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
-                </a>
-              </div>
-            </div>
-            <h4>Snip &amp; Ask</h4>
-            <p>
-              Published Chrome extension with <strong>540 organic users</strong>: snip any screen region
-              and get contextual AI help without leaving the page. Guest Mode runs on a self-hosted
-              Cloudflare Worker over Groq's free tier; Auto Mode performs OCR before inference and falls
-              back to vision models only when needed.
-            </p>
-            <div class="tag-row">
-              <span class="tag">JavaScript</span><span class="tag">Chrome MV3</span><span class="tag">OCR</span><span class="tag">Cloudflare Workers</span>
-            </div>
-          </article>
+        <h3 class="section-title reveal"><span class="mono">04.</span> What's Next<i class="rule"></i></h3>
+        <div class="next-lead reveal">
+          <p>Right now, I'm going deeper into the fundamentals.</p>
+          <p>
+            I'm focusing on CS fundamentals, DSA, backend engineering, and AI agents — learning
+            how these systems work rather than rushing to the next framework.
+          </p>
+          <p>
+            I'm not trying to lock myself into one particular area yet. If a problem requires me
+            to learn something new, that's part of the process.
+          </p>
         </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <h3 class="section-title reveal"><span class="mono">04.</span> Skills<i class="rule"></i></h3>
+        <p class="section-sub reveal">Tools I've actually used across these projects:</p>
         <div class="skills-grid" data-stagger>
           <div class="skill-card reveal">
             <h5>Languages</h5>
@@ -324,7 +379,7 @@
             <span class="ach-year">2026</span>
             <div>
               <h5>FOSSEE Summer Fellowship — IIT Bombay</h5>
-              <p>Nationally competitive open-source software fellowship. Completion certified.</p>
+              <p>Selected for a nationally competitive open-source software fellowship conducted by IIT Bombay.</p>
             </div>
           </li>
           <li class="reveal">
@@ -345,30 +400,20 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <section id="contact" class="section">
       <div class="container">
-        <div class="contact-panel reveal">
-          <p class="hero-eyebrow">06. What's next?</p>
-          <h4 class="contact-head">Let's build something real<span class="accent">.</span></h4>
-          <p class="contact-desc">
-            I'm open to internships, collaborations, and interesting problems in applied AI.
-            My inbox is always open.
-          </p>
-          <a href="mailto:saurav04042004@gmail.com" class="btn btn-primary btn-lg">Say hello</a>
-          <div class="contact-socials">
-            <a href="https://github.com/Saura-4" target="_blank" rel="noopener" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-            </a>
-            <a href="https://linkedin.com/in/saurav-chourasia" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
-            </a>
-            <a href="https://leetcode.com/u/saura_4/" target="_blank" rel="noopener" aria-label="LeetCode">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.8 2.3a1.15 1.15 0 0 0-.16 1.62l6.13 6.83h-6.02a1.15 1.15 0 1 0 0 2.3h6.02l-6.13 6.83a1.15 1.15 0 0 0 1.72 1.53l6.9-7.68a1.15 1.15 0 0 0 0-1.54l-6.9-7.68a1.15 1.15 0 0 0-1.56-.21zM8.2 4.6a1.15 1.15 0 0 0-.82.34L1.3 11.23a1.15 1.15 0 0 0 0 1.54l6.08 6.29a1.15 1.15 0 0 0 1.66-1.6l-5.32-5.5 5.32-5.5A1.15 1.15 0 0 0 8.2 4.6z"/></svg>
-            </a>
-            <a href="mailto:saurav04042004@gmail.com" aria-label="Email">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-            </a>
-          </div>
+        <h3 class="section-title reveal"><span class="mono">06.</span> Say hello<i class="rule"></i></h3>
+        <p class="section-sub reveal">Have an idea, want to talk about something I've built, or just want to connect?</p>
+        <div class="contact-links reveal">
+          <a href="mailto:saurav04042004@gmail.com">Email
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a href="https://github.com/Saura-4" target="_blank" rel="noopener">GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/saurav-chourasia" target="_blank" rel="noopener">LinkedIn
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -385,7 +430,7 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
   </div>
 
-  <script src="backgrounds.js?v=2"></script>
-  <script src="script.js?v=2"></script>
+  <script src="backgrounds.js?v=4"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
