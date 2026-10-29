@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saurav Chourasia — Computer Science Student</title>
-  <meta name="description" content="Saurav Chourasia — CS student at VIT Bhopal. I like building things I don't know how to build yet: a Chrome extension with 540+ users, an eSim AI assistant at FOSSEE (IIT Bombay), a from-scratch RAG evaluation framework, and FastAPI backends." />
+  <meta name="description" content="Saurav Chourasia — CS student at VIT Bhopal. I like building things I don't know how to build yet: a Chrome extension with 2.5K+ installs &amp; 1,300+ users, an eSim AI assistant at FOSSEE (IIT Bombay), a modular RAG benchmark, and FastAPI backends." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000000'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' fill='%23e8e8e8' text-anchor='middle'%3ESC%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,9 +68,9 @@
             </div>
           </div>
           <div class="quick-stats anim" style="--d:.55s">
-            <div class="qs-box"><span class="qs-num" data-count="540" data-suffix="+">0</span><span class="qs-label">organic users on Snip &amp; Ask</span></div>
+            <div class="qs-box"><span class="qs-num" data-count="1300" data-suffix="+">0</span><span class="qs-label">active users on Snip &amp; Ask (2.5K+ installs)</span></div>
             <div class="qs-box"><span class="qs-num">IIT-B</span><span class="qs-label">FOSSEE Fellow '26</span></div>
-            <a class="qs-box qs-link" href="Saurav_Chourasia_Resume.pdf" download><span class="qs-num">Resume ↓</span><span class="qs-label">download the PDF</span></a>
+            <a class="qs-box qs-link" href="https://drive.google.com/file/d/1IgwkH9LA6TuF96Rg1M-ELA-TKDEzRC3p/view?usp=sharing" target="_blank" rel="noopener" aria-label="View Resume on Google Drive"><span class="qs-num">Resume ↗</span><span class="qs-label">view on Google Drive</span></a>
           </div>
         </div>
       </div>
@@ -139,7 +139,7 @@
 
         <article class="project-featured reveal">
           <div class="pf-content">
-            <p class="project-meta">Chrome extension &middot; 540+ organic users</p>
+            <p class="project-meta">Chrome extension &middot; 2.5K+ installs &middot; 1,300+ active users &middot; 55K+ requests</p>
             <div class="project-top">
               <div class="folder-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
@@ -158,19 +158,16 @@
               This is where it started. I wanted to ask a question about something on my screen,
               and the honest options were: screenshot it, save it, switch tabs, and re-explain the
               context. So I built a Chrome extension that captures any region of the screen and
-              answers questions about it — without leaving the page.
+              answers questions about it — without leaving the page. Now live on the Chrome Web Store with 2.5K+ installs and 1,300+ users.
             </p>
             <p>
-              The first version was just for me. Friends encouraged me to publish it, and it's now
-              live on the Chrome Web Store. Making it work for other people was the real education:
-              a Guest Mode with zero setup (backed by a Cloudflare Worker I run), bring-your-own-key
-              support for Groq, Gemini, OpenAI, OpenRouter and local Ollama, an Auto Mode that routes
-              around single-model rate limits, and on-device OCR with Tesseract.js so text-only
-              models can read screenshots.
+              Making it work seamlessly at scale was the real education: a self-hosted Cloudflare Worker with
+              D1-backed rate limiting for Guest Mode serving 55K+ API requests without requiring users to configure API keys.
+              It features automatic model routing that passes captures through OCR to text models and falls back to vision models only when visual context is required, plus multi-provider support with BYOK and Compare Mode to evaluate multiple model responses.
             </p>
-            <p class="p-note">the arc: idea &rarr; build &rarr; make it usable &rarr; other people use it.</p>
+            <p class="p-note">the arc: idea &rarr; build &rarr; make it usable &rarr; 2,500+ users rely on it.</p>
             <div class="tag-row">
-              <span class="tag">JavaScript</span><span class="tag">Chrome MV3</span><span class="tag">Cloudflare Workers</span><span class="tag">Tesseract.js OCR</span>
+              <span class="tag">JavaScript</span><span class="tag">Chrome MV3</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare D1</span><span class="tag">OCR</span><span class="tag">LLM APIs</span>
             </div>
           </div>
           <span class="ghost-num" aria-hidden="true">01</span>
@@ -178,12 +175,15 @@
 
         <article class="project-featured reveal">
           <div class="pf-content">
-            <p class="project-meta">FOSSEE Summer Fellowship &middot; IIT Bombay</p>
+            <p class="project-meta">FOSSEE Summer Fellowship &middot; IIT Bombay &middot; May – Jul 2026</p>
             <div class="project-top">
               <div class="folder-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
               </div>
               <div class="project-links">
+                <a href="https://github.com/FOSSEE/eSim/pull/586" target="_blank" rel="noopener" aria-label="GitHub Pull Request #586">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
                 <a class="ext-link" href="https://fossee.in" target="_blank" rel="noopener" aria-label="FOSSEE, IIT Bombay">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
@@ -191,20 +191,15 @@
             </div>
             <h4>eSim AI Assistant</h4>
             <p>
-              At FOSSEE I worked on the eSim AI assistant, a chatbot that helps people debug
-              circuit simulations — and it's the project that changed how I think about LLM systems.
+              At FOSSEE, IIT Bombay, I worked on the eSim AI assistant — a project that changed how I think about LLM architecture.
+              Rather than asking a local LLM to reason over raw circuit netlists directly, I redesigned the pipeline to extract circuit structure and simulation facts deterministically before LLM inference, ensuring the model explains verified facts rather than inferring them.
             </p>
             <p>
-              The existing approach leaned heavily on a local LLM to reason about circuit and
-              netlist information directly, which meant asking the model to guess facts it was
-              never given. I redesigned the pipeline the other way around: deterministic code
-              extracts the circuit facts first, and the LLM is handed verified facts to explain.
-              I also built a rule-based NgSpice error analyzer that prioritizes errors by causal
-              dependency, so root causes surface before the failures they trigger downstream.
+              I engineered a rule-based NgSpice error analysis engine that detects, ranks, and suppresses cascading errors to surface root causes before generating explanations. Additionally, I developed an offline circuit analysis workflow that generates structured netlist summaries and error reports without requiring an LLM, and integrated it directly into eSim's Project Explorer to connect simulation failures directly to the assistant.
             </p>
-            <p class="p-note">what clicked: an LLM doesn't always need to reason itself — give it reliable information and let it explain.</p>
+            <p class="p-note">what clicked: deterministic extraction first &rarr; verifiable explanations second.</p>
             <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">Rule-based Systems</span><span class="tag">LLM Pipelines</span>
+              <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">Rule-based Systems</span><span class="tag">Deterministic Pipelines</span><span class="tag">eSim Integration</span>
             </div>
           </div>
           <span class="ghost-num" aria-hidden="true">02</span>
@@ -212,7 +207,7 @@
 
         <article class="project-featured reveal">
           <div class="pf-content">
-            <p class="project-meta">RAG framework &middot; built from scratch</p>
+            <p class="project-meta">Modular RAG pipeline &middot; BEIR benchmarking &middot; built from scratch</p>
             <div class="project-top">
               <div class="folder-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
@@ -226,24 +221,16 @@
                 </a>
               </div>
             </div>
-            <h4>Modular RAG Evaluation Framework</h4>
+            <h4>Modular RAG &amp; Retrieval Benchmark</h4>
             <p>
-              After eSim, I kept thinking about the same question in a more general form: how do
-              we give LLMs better information? I didn't want to build another RAG demo — I wanted
-              to understand retrieval itself, and you can't do that if you can't swap the parts.
+              Built a modular RAG pipeline completely from scratch with swappable ingestion, chunking (6 strategies), retrieval (4 strategies), and generation components (cited-span, abstention, Chain-of-Verification), supporting Gemini and local Ollama backends.
             </p>
             <p>
-              So I built the framework from scratch — no LangChain, no LlamaIndex. Indexing,
-              chunking, retrieval, reranking, generation and evaluation are all interchangeable
-              modules. I used it to benchmark 4 chunking strategies against 4 retrieval pipelines
-              on <strong>BEIR SciFact</strong>, implementing Recall@k, Precision@k, MRR and
-              NDCG@k from scratch, and to compare generation strategies — CoVe, Cited-Span and
-              Abstain Generation — under a RAGTruth-inspired hallucination evaluation. Everything
-              runs locally on Ollama and ChromaDB, with cross-encoder reranking.
+              Wrote Recall@k, Precision@k, MRR, and NDCG@k from scratch and systematically benchmarked semantic, BM25-hybrid, and cross-encoder reranked retrieval on <strong>BEIR SciFact, ArguAna, and NFCorpus</strong>. Empirical findings showed hybrid + reranking scored highest on SciFact (0.665 NDCG@5) and NFCorpus (0.386), while plain semantic won on ArguAna (0.315). Analyzing the quality/latency trade-off revealed semantic + reranking came within 0.006 NDCG@5 of hybrid + reranking on SciFact at 0.3s vs up to 1.5s per query.
             </p>
-            <p class="p-note">the point: change one component, measure, and actually see what happens.</p>
+            <p class="p-note">the point: measure systematically &rarr; optimize retrieval quality against real latency costs.</p>
             <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">Cross-Encoder Reranking</span><span class="tag">BEIR SciFact</span>
+              <span class="tag">Python</span><span class="tag">ChromaDB</span><span class="tag">BM25</span><span class="tag">Cross-Encoder</span><span class="tag">BEIR Benchmark</span><span class="tag">Gemini / Ollama</span>
             </div>
           </div>
           <span class="ghost-num" aria-hidden="true">03</span>
@@ -260,7 +247,7 @@
                 <a href="https://github.com/Saura-4/llm-chatbot" target="_blank" rel="noopener" aria-label="GitHub repository">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 </a>
-                <a class="ext-link" href="https://llm-chatbot-saurav.vercel.app" target="_blank" rel="noopener" aria-label="Live demo">
+                <a class="ext-link" href="https://llm-chatbot-blush.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
               </div>
@@ -279,7 +266,7 @@
             </p>
             <p class="p-note">the engineering under an AI app, built by hand instead of assumed.</p>
             <div class="tag-row">
-              <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">SSE Streaming</span><span class="tag">Docker</span>
+              <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">Redis</span><span class="tag">SSE Streaming</span><span class="tag">Docker</span>
             </div>
           </div>
           <span class="ghost-num" aria-hidden="true">04</span>
@@ -298,19 +285,19 @@
             <div class="tl-body">
               <div class="tl-head">
                 <div>
-                  <h4>Software Engineering Intern — eSim AI Chatbot</h4>
-                  <p class="tl-org">FOSSEE Summer Fellowship &middot; IIT Bombay</p>
+                  <h4>Software Engineering Intern — eSim AI Assistant</h4>
+                  <p class="tl-org">FOSSEE Summer Fellowship &middot; IIT Bombay &middot; <a href="https://github.com/FOSSEE/eSim/pull/586" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">PR #586 ↗</a></p>
                 </div>
                 <span class="badge">May – Jul 2026 &middot; Remote</span>
               </div>
               <ul class="tl-list">
-                <li>Redesigned the chatbot's inference pipeline by extracting <strong>deterministic circuit facts before LLM inference</strong>, replacing raw netlist-to-prompt processing with structured circuit analysis.</li>
-                <li>Built a rule-based <strong>NgSpice error analysis engine</strong> that prioritizes errors by causal dependency, identifying root causes before downstream failures.</li>
-                <li>Developed a fully <strong>offline circuit analysis pipeline</strong> that generates deterministic circuit summaries without requiring an LLM.</li>
-                <li>Shifted the LLM's role from guessing circuit behavior to <strong>explaining verified analysis</strong> — the model no longer had to guess factual circuit information, which made the reasoning pipeline more reliable.</li>
+                <li>Redesigned the eSim AI assistant pipeline to extract <strong>circuit and simulation facts deterministically</strong> (netlist structure, simulation setup) before LLM inference, so the model explains verified facts instead of inferring them.</li>
+                <li>Engineered a rule-based <strong>NgSpice error analysis engine</strong> that detects, ranks, and suppresses cascading errors to identify root causes before generating user-facing explanations.</li>
+                <li>Developed an <strong>offline circuit analysis workflow</strong> that generates structured netlist summaries and error reports without requiring an LLM, keeping core analysis available on systems without local AI.</li>
+                <li><strong>Integrated the analysis workflow into eSim</strong>, enabling netlist analysis from the Project Explorer and connecting simulation failures directly to the AI assistant.</li>
               </ul>
               <div class="tag-row">
-                <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">LLM Pipelines</span><span class="tag">Rule-based Systems</span>
+                <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">LLM Pipelines</span><span class="tag">Rule-based Systems</span><span class="tag">eSim</span>
               </div>
             </div>
           </div>
@@ -356,16 +343,16 @@
             <div class="tag-row"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span></div>
           </div>
           <div class="skill-card reveal">
-            <h5>Backend</h5>
-            <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">JWT Auth</span></div>
-          </div>
-          <div class="skill-card reveal">
             <h5>AI / LLM</h5>
-            <div class="tag-row"><span class="tag">RAG</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">Sentence Transformers</span><span class="tag">BM25</span><span class="tag">Cross-Encoder Reranking</span></div>
+            <div class="tag-row"><span class="tag">RAG</span><span class="tag">Agentic AI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">BM25</span><span class="tag">Cross-Encoder Reranking</span></div>
           </div>
           <div class="skill-card reveal">
-            <h5>Tools &amp; Platforms</h5>
-            <div class="tag-row"><span class="tag">Git</span><span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Cloudflare Workers</span><span class="tag">Chrome MV3</span></div>
+            <h5>Backend</h5>
+            <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">JWT Auth</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h5>Tools &amp; Infrastructure</h5>
+            <div class="tag-row"><span class="tag">Git</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare D1</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Chrome MV3</span></div>
           </div>
         </div>
       </div>
@@ -383,17 +370,24 @@
             </div>
           </li>
           <li class="reveal">
-            <span class="ach-year">NPTEL</span>
+            <span class="ach-year">AWS</span>
             <div>
-              <h5>Blockchain and its Applications</h5>
-              <p>Certified with <strong>Top 5%</strong> standing.</p>
+              <h5>AWS Certified AI Practitioner</h5>
+              <p>Official AWS Certification in AI concepts, generative AI, and foundation models. <a href="https://www.credly.com/badges/7fd83a39-75a6-4b70-8f13-1a3d02664f6b/public_url" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">View Credly Certificate ↗</a></p>
             </div>
           </li>
           <li class="reveal">
             <span class="ach-year">Live</span>
             <div>
               <h5>Snip &amp; Ask on the Chrome Web Store</h5>
-              <p>Published extension organically reaching <strong>540+ users</strong>.</p>
+              <p>Published extension reaching <strong>2,500+ installs</strong>, <strong>1,300+ active users</strong>, and serving <strong>55,000+ API requests</strong>.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="ach-year">NPTEL</span>
+            <div>
+              <h5>Blockchain and its Applications</h5>
+              <p>Certified with <strong>Top 5%</strong> standing.</p>
             </div>
           </li>
         </ul>
@@ -412,6 +406,9 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
           </a>
           <a href="https://linkedin.com/in/saurav-chourasia" target="_blank" rel="noopener">LinkedIn
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a href="https://drive.google.com/file/d/1IgwkH9LA6TuF96Rg1M-ELA-TKDEzRC3p/view?usp=sharing" target="_blank" rel="noopener">Resume
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
           </a>
         </div>
