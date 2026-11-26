@@ -6,14 +6,16 @@ const links = document.querySelectorAll(".nav-links a");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 menuBtn.addEventListener("click", () => {
-  menuBtn.classList.toggle("open");
-  navLinks.classList.toggle("open");
+  const isOpen = menuBtn.classList.toggle("open");
+  navLinks.classList.toggle("open", isOpen);
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
 });
 
 links.forEach((link) =>
   link.addEventListener("click", () => {
     menuBtn.classList.remove("open");
     navLinks.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
   })
 );
 
@@ -28,7 +30,10 @@ window.addEventListener(
     });
 
     links.forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
+      const isActive = link.getAttribute("href") === `#${current}`;
+      link.classList.toggle("active", isActive);
+      if (isActive) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
     });
   },
   { passive: true }
@@ -65,14 +70,17 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const progressBar = document.getElementById("progressBar");
 
-window.addEventListener(
-  "scroll",
-  () => {
-    const max = document.documentElement.scrollHeight - window.innerHeight;
-    progressBar.style.width = `${(window.scrollY / max) * 100}%`;
-  },
-  { passive: true }
-);
+if (!CSS.supports("animation-timeline", "scroll()") && !reducedMotion) {
+  window.addEventListener(
+    "scroll",
+    () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(Math.max(window.scrollY / max, 0), 1) : 0;
+      progressBar.style.transform = `scaleX(${ratio})`;
+    },
+    { passive: true }
+  );
+}
 
 /* ================= Hero background: starfield ================= */
 

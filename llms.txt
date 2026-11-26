@@ -1,0 +1,46 @@
+# Saurav Chourasia
+
+> Final-year B.Tech Computer Science & Engineering student at VIT Bhopal University (2023–2027, CGPA 8.48/10), based in Bhopal, India. Focused on backend engineering, CS fundamentals, and full-time SWE / Backend roles.
+
+## Background & Focus
+- Started building AI tools to remove workflow friction, which led to realizing dependable LLM applications are mostly backend engineering.
+- Currently focused on backend systems, DSA / CS fundamentals, and post-deployment concerns: observability, tracing (LangSmith), cost control, and scaling.
+
+## Experience
+- **Software Engineering Intern — eSim AI Assistant**, FOSSEE Summer Fellowship, IIT Bombay (May – Jul 2026, Remote)
+  - PR: https://github.com/FOSSEE/eSim/pull/586
+  - Replaced raw-netlist LLM prompting with a deterministic Python fact-extraction pipeline so the model explains verified circuit facts instead of guessing topology.
+  - Engineered a rule-based NgSpice error analysis engine to detect, rank, and suppress cascading errors.
+  - Built a hybrid offline workflow surfacing extracted RAG context and structured diagnostics without requiring a local LLM.
+  - Integrated the workflow into eSim's Project Explorer.
+
+## Projects
+1. **Snip & Ask** (Chrome Extension)
+   - Repo: https://github.com/Saura-4/Snip-Ask-Chrome-Extension
+   - Store: https://chromewebstore.google.com/detail/snip-ask-ai-screen-assist/bhbmfojjmimjpdkebhhipkffjkcglofo
+   - Over 1,700+ active users and 75,000+ backend requests served.
+   - Self-hosted Cloudflare Worker proxy with D1-backed rate limiting for Guest Mode, OCR-first model routing (text models before vision fallback), BYOK, and Compare Mode.
+2. **eSim AI Assistant** (FOSSEE, IIT Bombay)
+   - PR: https://github.com/FOSSEE/eSim/pull/586
+   - Deterministic netlist fact extraction, rule-based NgSpice error engine, and hybrid offline diagnostics.
+3. **Modular RAG & Retrieval Benchmark**
+   - Repo: https://github.com/Saura-4/Modular-RAG-Evaluation-Framework
+   - Built from scratch with 6 chunking strategies, 4 retrieval strategies, and Recall@k, Precision@k, MRR, and NDCG@k benchmarked on BEIR SciFact, ArguAna, and NFCorpus across Gemini and Ollama.
+4. **LLM ChatBot Backend**
+   - Repo: https://github.com/Saura-4/llm-chatbot
+   - Demo: https://llm-chatbot-blush.vercel.app/
+   - Multi-user FastAPI + PostgreSQL + SQLAlchemy + Alembic backend with JWT auth, conversation-level authorization, Redis caching, SSE streaming, and Docker.
+
+## Certifications & Achievements
+- **AWS Certified Developer – Associate**: https://www.credly.com/badges/44f78f44-5e62-46fc-a71e-32100d9c9e5b/public_url
+- **AWS Certified AI Practitioner**: https://www.credly.com/badges/7fd83a39-75a6-4b70-8f13-1a3d02664f6b/public_url
+- **FOSSEE Summer Fellowship — IIT Bombay** (2026)
+- **NPTEL — Blockchain and its Applications** (Top 5%)
+
+## Links
+- Website: https://sauravchourasia.me/
+- Email: saurav04042004@gmail.com
+- GitHub: https://github.com/Saura-4
+- LinkedIn: https://linkedin.com/in/saurav-chourasia
+- LeetCode: https://leetcode.com/u/saura_4/
+- Resume: https://drive.google.com/file/d/1IgwkH9LA6TuF96Rg1M-ELA-TKDEzRC3p/view?usp=sharing

@@ -3,16 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saurav Chourasia — Computer Science Student</title>
-  <meta name="description" content="Saurav Chourasia — CS student at VIT Bhopal. I like building things I don't know how to build yet: a Chrome extension with 2.5K+ installs &amp; 1,300+ users, an eSim AI assistant at FOSSEE (IIT Bombay), a modular RAG benchmark, and FastAPI backends." />
+  <title>Saurav Chourasia — Backend &amp; AI Systems Engineer</title>
+  <meta name="description" content="Saurav Chourasia — Final-year CS undergrad at VIT Bhopal. Built Snip &amp; Ask (1,700+ users, 75K+ backend requests) and interned at IIT Bombay (FOSSEE eSim AI). Focused on backend engineering and CS fundamentals." />
+  <link rel="canonical" href="https://sauravchourasia.me/" />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sauravchourasia.me/" />
+  <meta property="og:title" content="Saurav Chourasia — Backend &amp; AI Systems Engineer" />
+  <meta property="og:description" content="Final-year CS undergrad at VIT Bhopal. Built Snip &amp; Ask (1,700+ users) and interned at IIT Bombay — focused on backend engineering, CS fundamentals, and full-time SWE roles." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Saurav Chourasia — Backend &amp; AI Systems Engineer" />
+  <meta name="twitter:description" content="Final-year CS undergrad at VIT Bhopal. Built Snip &amp; Ask (1,700+ users) and interned at IIT Bombay — focused on backend engineering, CS fundamentals, and full-time SWE roles." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saurav Chourasia",
+    "url": "https://sauravchourasia.me/",
+    "email": "mailto:saurav04042004@gmail.com",
+    "jobTitle": "Software Engineering Student — Backend & AI Systems",
+    "description": "Final-year B.Tech CSE student at VIT Bhopal University. Built Snip & Ask (1,700+ users, 75K+ backend requests) and interned at FOSSEE, IIT Bombay.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bhopal",
+      "addressCountry": "IN"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "VIT Bhopal University"
+    },
+    "knowsAbout": [
+      "Backend Engineering",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Cloudflare Workers",
+      "Retrieval-Augmented Generation (RAG)",
+      "LangGraph",
+      "AWS"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "AWS Certified Developer - Associate",
+        "url": "https://www.credly.com/badges/44f78f44-5e62-46fc-a71e-32100d9c9e5b/public_url"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "AWS Certified AI Practitioner",
+        "url": "https://www.credly.com/badges/7fd83a39-75a6-4b70-8f13-1a3d02664f6b/public_url"
+      }
+    ],
+    "sameAs": [
+      "https://github.com/Saura-4",
+      "https://linkedin.com/in/saurav-chourasia",
+      "https://leetcode.com/u/saura_4/"
+    ]
+  }
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000000'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' fill='%23e8e8e8' text-anchor='middle'%3ESC%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
 </head>
 <body>
 
+  <a href="#top" class="skip-link visually-hidden">Skip to content</a>
   <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
   <div class="blob blob-1" aria-hidden="true"></div>
   <div class="blob blob-2" aria-hidden="true"></div>
@@ -21,56 +80,61 @@
     <div class="container nav-inner">
       <a href="#top" class="logo">Saurav<span class="logo-dot">.</span></a>
       <div class="nav-right">
-        <nav class="nav-links" id="navLinks">
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
-          <a href="#whats-next">What's next</a>
+          <a href="#whats-next">Focus</a>
+          <a href="#achievements">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
-        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" tabindex="-1">
 
     <section class="hero">
       <canvas id="particles" aria-hidden="true"></canvas>
       <div class="container hero-grid">
         <div>
-          <p class="hero-eyebrow anim" style="--d:.05s">Hi, my name is</p>
+          <p class="hero-eyebrow anim" style="--d:.05s">Backend &amp; AI Systems Engineer</p>
           <h1 class="anim" style="--d:.15s">Saurav Chourasia<span class="accent">.</span></h1>
-          <p class="hero-role anim" style="--d:.25s">I like to <span class="grad">build stuff.</span></p>
+          <p class="hero-role anim" style="--d:.25s">I build <span class="grad">reliable backends.</span></p>
           <p class="hero-desc anim" style="--d:.35s">
-            Computer Science student at VIT Bhopal, exploring AI, backend systems,
-            and whatever catches my curiosity next.
+            Final-year CS undergrad at VIT Bhopal. Built Snip &amp; Ask (1,700+ users) and
+            interned at IIT Bombay &mdash; focused on backend engineering, CS fundamentals,
+            and full-time SWE roles.
           </p>
           <div class="hero-cta anim" style="--d:.45s">
             <a href="#projects" class="btn btn-primary">See what I've built</a>
-            <a href="#contact" class="link-arrow">get in touch
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            <a href="https://drive.google.com/file/d/1IgwkH9LA6TuF96Rg1M-ELA-TKDEzRC3p/view?usp=sharing" target="_blank" rel="noopener" class="link-arrow">Resume
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+            <a href="#contact" class="link-arrow">Get in touch
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
             </a>
           </div>
         </div>
         <div class="hero-panel">
           <div class="box box-term anim" style="--d:.4s">
-            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span></div>
             <div class="terminal-body">
               <p><span class="t-prompt">$</span> whoami</p>
-              <p class="t-out">saurav_chourasia</p>
-              <p><span class="t-prompt">$</span> cat starting-point.txt</p>
-              <p class="t-out">"i wonder if i can build this"</p>
-              <p><span class="t-prompt">$</span> ls learning/</p>
-              <p class="t-out">cs-fundamentals/ dsa/ backend/ agents/ <span class="t-cursor">▊</span></p>
+              <p class="t-out">saurav_chourasia &mdash; VIT Bhopal '27</p>
+              <p><span class="t-prompt">$</span> cat thesis.txt</p>
+              <p class="t-out">"reliable AI is 80% backend engineering"</p>
+              <p><span class="t-prompt">$</span> ls focus/</p>
+              <p class="t-out">backend-apis/ deterministic-pipelines/ observability/ scaling/ <span class="t-cursor">&#9610;</span></p>
             </div>
           </div>
           <div class="quick-stats anim" style="--d:.55s">
-            <div class="qs-box"><span class="qs-num" data-count="1300" data-suffix="+">0</span><span class="qs-label">active users on Snip &amp; Ask (2.5K+ installs)</span></div>
-            <div class="qs-box"><span class="qs-num">IIT-B</span><span class="qs-label">FOSSEE Fellow '26</span></div>
-            <a class="qs-box qs-link" href="https://drive.google.com/file/d/1IgwkH9LA6TuF96Rg1M-ELA-TKDEzRC3p/view?usp=sharing" target="_blank" rel="noopener" aria-label="View Resume on Google Drive"><span class="qs-num">Resume ↗</span><span class="qs-label">view on Google Drive</span></a>
+            <div class="qs-box"><span class="qs-num" data-count="1700" data-suffix="+">0</span><span class="qs-label">users on Snip &amp; Ask (75K+ backend requests)</span></div>
+            <div class="qs-box"><span class="qs-num">IIT-B</span><span class="qs-label">FOSSEE Fellow '26 (eSim AI)</span></div>
+            <a class="qs-box qs-link" href="#achievements"><span class="qs-num">2&times; AWS</span><span class="qs-label">Developer Associate &amp; AI Practitioner</span></a>
           </div>
         </div>
       </div>
@@ -82,50 +146,54 @@
 
     <section id="about" class="section">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">01.</span> A little about me<i class="rule"></i></h3>
+        <h2 class="section-title reveal"><span class="mono">01.</span> About<i class="rule"></i></h2>
         <div class="bento">
 
           <div class="box box-bio reveal">
-            <h5>I usually start with a question.</h5>
+            <h3>From chasing AI hype to owning the backend.</h3>
             <p>
-              Sometimes it's <em>"I wonder if I can build this."</em> Sometimes it's
-              <em>"there has to be a better way to do this."</em>
+              I started building AI tools to remove friction from my own workflow. <strong>Snip &amp; Ask</strong>
+              began when I got tired of screenshotting, switching tabs, and re-explaining context to an LLM.
+              Scaling it past <strong>1,700+ users</strong> and <strong>75,000+ backend requests</strong> forced me
+              to learn edge rate-limiting, model routing, and cost control for real.
             </p>
             <p>
-              That's how most of my projects have started. I built Snip &amp; Ask because I thought
-              getting an answer to something on my screen should be easier. Working on an AI
-              assistant at FOSSEE made me curious about how we can make LLMs work with information
-              they can actually rely on. That led me into RAG, then backend engineering, and now
-              agents and CS fundamentals.
+              During my <strong>FOSSEE Fellowship at IIT Bombay</strong>, I saw where naive LLM wrappers break:
+              feeding raw circuit netlists to a local model caused hallucinations. The fix wasn't a better prompt —
+              it was a deterministic Python extraction pipeline and a rule-based error engine before inference ever ran.
+              That pulled me into <strong>RAG evaluation</strong>, then <strong>FastAPI &amp; PostgreSQL</strong> backends,
+              and then <strong>LangGraph</strong> agent loops.
             </p>
             <p>
-              I learn best by building things myself. The goal isn't just to make something work,
-              but to understand why it works.
+              Two lessons stuck: <em>understand what a library is doing, not just its APIs</em>, and
+              <em>writing code is the easy part</em> — the real engineering is observability, traceability,
+              cost control, and scaling after deployment.
             </p>
           </div>
 
           <div class="box box-term reveal">
-            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span></div>
             <div class="terminal-body">
-              <p><span class="t-prompt">$</span> cat approach.md</p>
-              <p class="t-out">understand what's underneath.</p>
-              <p class="t-out">then build it.</p>
-              <p><span class="t-prompt">$</span> ls interests/</p>
-              <p class="t-out">retrieval/ evaluation/ backends/</p>
+              <p><span class="t-prompt">$</span> cat principles.md</p>
+              <p class="t-out">1. understand the system, not just the API.</p>
+              <p class="t-out">2. deterministic facts before LLM inference.</p>
+              <p class="t-out">3. measure latency, cost, and failure modes.</p>
+              <p><span class="t-prompt">$</span> ls next/</p>
+              <p class="t-out">observability/ langsmith/ tracing/ scaling/</p>
             </div>
           </div>
 
           <div class="box box-edu reveal">
-            <div class="box-icon"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
-            <h5>B.Tech CSE '27</h5>
+            <div class="box-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
+            <h3>B.Tech CSE '27</h3>
             <p>VIT Bhopal University &middot; Cyber Security &amp; Digital Forensics</p>
-            <span class="pill">CGPA 8.48 / 10</span>
+            <span class="pill">Final Year &middot; CGPA 8.48 / 10</span>
           </div>
 
           <div class="box box-loc reveal">
-            <div class="box-icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <h5>Bhopal, India</h5>
-            <p><span class="status-dot"></span>Open to internships &amp; collaborations.</p>
+            <div class="box-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3>Bhopal, India</h3>
+            <p><span class="status-dot" aria-hidden="true"></span>Open to full-time SWE &amp; Backend roles (2027 grad).</p>
           </div>
 
         </div>
@@ -134,40 +202,41 @@
 
     <section id="projects" class="section section-alt">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">02.</span> Things I've Built<i class="rule"></i></h3>
-        <p class="section-sub reveal">Roughly in the order I built them. Each one exists because of what the previous one taught me.</p>
+        <h2 class="section-title reveal"><span class="mono">02.</span> Engineering Projects<i class="rule"></i></h2>
+        <p class="section-sub reveal">Built in sequence &mdash; each project exposed the next engineering gap I needed to solve.</p>
 
         <article class="project-featured reveal">
           <div class="pf-content">
-            <p class="project-meta">Chrome extension &middot; 2.5K+ installs &middot; 1,300+ active users &middot; 55K+ requests</p>
+            <p class="project-meta">Production Chrome Extension &middot; 1,700+ users &middot; 75K+ backend requests served</p>
             <div class="project-top">
-              <div class="folder-icon">
+              <div class="folder-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Saura-4/Snip-Ask-Chrome-Extension" target="_blank" rel="noopener" aria-label="GitHub repository">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                <a href="https://github.com/Saura-4/Snip-Ask-Chrome-Extension" target="_blank" rel="noopener" aria-label="Snip and Ask GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 </a>
-                <a class="ext-link" href="https://chromewebstore.google.com/detail/snip-ask-ai-screen-assist/bhbmfojjmimjpdkebhhipkffjkcglofo" target="_blank" rel="noopener" aria-label="Chrome Web Store">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                <a class="ext-link" href="https://chromewebstore.google.com/detail/snip-ask-ai-screen-assist/bhbmfojjmimjpdkebhhipkffjkcglofo" target="_blank" rel="noopener" aria-label="Snip and Ask on Chrome Web Store">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
               </div>
             </div>
-            <h4>Snip &amp; Ask</h4>
+            <h3>Snip &amp; Ask</h3>
             <p>
-              This is where it started. I wanted to ask a question about something on my screen,
-              and the honest options were: screenshot it, save it, switch tabs, and re-explain the
-              context. So I built a Chrome extension that captures any region of the screen and
-              answers questions about it — without leaving the page. Now live on the Chrome Web Store with 2.5K+ installs and 1,300+ users.
+              Built to eliminate the screenshot &rarr; tab-switch &rarr; paste loop when asking an LLM about
+              something on screen. It overlays responses directly on the active page, and has grown to
+              <strong>1,700+ users</strong> on the Chrome Web Store.
             </p>
             <p>
-              Making it work seamlessly at scale was the real education: a self-hosted Cloudflare Worker with
-              D1-backed rate limiting for Guest Mode serving 55K+ API requests without requiring users to configure API keys.
-              It features automatic model routing that passes captures through OCR to text models and falls back to vision models only when visual context is required, plus multi-provider support with BYOK and Compare Mode to evaluate multiple model responses.
+              Shipping it to real users turned it into a production backend project: I built a self-hosted
+              <strong>Cloudflare Worker</strong> proxy with <strong>D1-backed rate limiting</strong> for zero-setup
+              Guest Mode, serving <strong>75,000+ backend requests</strong>. Implemented <strong>OCR-first model routing</strong>
+              that sends text captures to fast text models and falls back to vision models only when visual context
+              is required, alongside BYOK and multi-model Compare Mode.
             </p>
-            <p class="p-note">the arc: idea &rarr; build &rarr; make it usable &rarr; 2,500+ users rely on it.</p>
+            <p class="p-note">friction &rarr; ship &rarr; 1,700+ users &amp; 75K+ requests taught me routing, rate limits, and cost.</p>
             <div class="tag-row">
-              <span class="tag">JavaScript</span><span class="tag">Chrome MV3</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare D1</span><span class="tag">OCR</span><span class="tag">LLM APIs</span>
+              <span class="tag">JavaScript</span><span class="tag">Chrome MV3</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare D1</span><span class="tag">OCR Routing</span><span class="tag">LLM APIs</span>
             </div>
           </div>
           <span class="ghost-num" aria-hidden="true">01</span>
@@ -175,31 +244,35 @@
 
         <article class="project-featured reveal">
           <div class="pf-content">
-            <p class="project-meta">FOSSEE Summer Fellowship &middot; IIT Bombay &middot; May – Jul 2026</p>
+            <p class="project-meta">FOSSEE Summer Fellowship &middot; IIT Bombay &middot; May &ndash; Jul 2026</p>
             <div class="project-top">
-              <div class="folder-icon">
+              <div class="folder-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
               </div>
               <div class="project-links">
-                <a href="https://github.com/FOSSEE/eSim/pull/586" target="_blank" rel="noopener" aria-label="GitHub Pull Request #586">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                <a href="https://github.com/FOSSEE/eSim/pull/586" target="_blank" rel="noopener" aria-label="eSim AI Assistant Pull Request #586 on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 </a>
                 <a class="ext-link" href="https://fossee.in" target="_blank" rel="noopener" aria-label="FOSSEE, IIT Bombay">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
               </div>
             </div>
-            <h4>eSim AI Assistant</h4>
+            <h3>eSim AI Assistant</h3>
             <p>
-              At FOSSEE, IIT Bombay, I worked on the eSim AI assistant — a project that changed how I think about LLM architecture.
-              Rather than asking a local LLM to reason over raw circuit netlists directly, I redesigned the pipeline to extract circuit structure and simulation facts deterministically before LLM inference, ensuring the model explains verified facts rather than inferring them.
+              At IIT Bombay, the existing assistant passed raw SPICE netlists directly to a local LLM, causing
+              hallucinations when the model tried to infer circuit topology on its own. I redesigned the pipeline
+              with a <strong>deterministic Python extraction layer</strong> that converts netlists and simulation state
+              into verified facts before LLM inference &mdash; so the model explains facts instead of guessing them.
             </p>
             <p>
-              I engineered a rule-based NgSpice error analysis engine that detects, ranks, and suppresses cascading errors to surface root causes before generating explanations. Additionally, I developed an offline circuit analysis workflow that generates structured netlist summaries and error reports without requiring an LLM, and integrated it directly into eSim's Project Explorer to connect simulation failures directly to the assistant.
+              I also engineered a <strong>rule-based NgSpice error engine</strong> that detects, ranks, and suppresses
+              cascading failures to isolate root causes, and built a <strong>hybrid offline mode</strong> that surfaces
+              the extracted RAG context and structured diagnostics directly to users on machines without a local LLM.
             </p>
-            <p class="p-note">what clicked: deterministic extraction first &rarr; verifiable explanations second.</p>
+            <p class="p-note">deterministic extraction first &rarr; verifiable explanations second, even without an LLM.</p>
             <div class="tag-row">
-              <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">Rule-based Systems</span><span class="tag">Deterministic Pipelines</span><span class="tag">eSim Integration</span>
+              <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">Deterministic Pipelines</span><span class="tag">Rule-based Systems</span><span class="tag">RAG</span>
             </div>
           </div>
           <span class="ghost-num" aria-hidden="true">02</span>
@@ -207,28 +280,31 @@
 
         <article class="project-featured reveal">
           <div class="pf-content">
-            <p class="project-meta">Modular RAG pipeline &middot; BEIR benchmarking &middot; built from scratch</p>
+            <p class="project-meta">Modular RAG Pipeline &middot; BEIR Benchmarking &middot; Built from Scratch</p>
             <div class="project-top">
-              <div class="folder-icon">
+              <div class="folder-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="GitHub repository">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                </a>
-                <a class="ext-link" href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="Open project">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                <a href="https://github.com/Saura-4/Modular-RAG-Evaluation-Framework" target="_blank" rel="noopener" aria-label="Modular RAG Evaluation Framework GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 </a>
               </div>
             </div>
-            <h4>Modular RAG &amp; Retrieval Benchmark</h4>
+            <h3>Modular RAG &amp; Retrieval Benchmark</h3>
             <p>
-              Built a modular RAG pipeline completely from scratch with swappable ingestion, chunking (6 strategies), retrieval (4 strategies), and generation components (cited-span, abstention, Chain-of-Verification), supporting Gemini and local Ollama backends.
+              Seeing how backend context shapes LLM accuracy at IIT Bombay led me to build a swappable RAG pipeline
+              from scratch: 6 chunking strategies, 4 retrieval strategies, and cited-span, abstention, and
+              Chain-of-Verification generation across Gemini and Ollama.
             </p>
             <p>
-              Wrote Recall@k, Precision@k, MRR, and NDCG@k from scratch and systematically benchmarked semantic, BM25-hybrid, and cross-encoder reranked retrieval on <strong>BEIR SciFact, ArguAna, and NFCorpus</strong>. Empirical findings showed hybrid + reranking scored highest on SciFact (0.665 NDCG@5) and NFCorpus (0.386), while plain semantic won on ArguAna (0.315). Analyzing the quality/latency trade-off revealed semantic + reranking came within 0.006 NDCG@5 of hybrid + reranking on SciFact at 0.3s vs up to 1.5s per query.
+              Implemented <strong>Recall@k, Precision@k, MRR, and NDCG@k</strong> from scratch and benchmarked
+              semantic, BM25-hybrid, and cross-encoder reranked retrieval on <strong>BEIR SciFact, ArguAna, and NFCorpus</strong>.
+              Hybrid + reranking led on SciFact (0.665 NDCG@5) and NFCorpus (0.386), while plain semantic won on
+              ArguAna (0.315). Profiling showed semantic + reranking came within 0.006 NDCG@5 of hybrid on SciFact at
+              0.3s vs up to 1.5s per query.
             </p>
-            <p class="p-note">the point: measure systematically &rarr; optimize retrieval quality against real latency costs.</p>
+            <p class="p-note">measure systematically &rarr; trade retrieval accuracy against real query latency.</p>
             <div class="tag-row">
               <span class="tag">Python</span><span class="tag">ChromaDB</span><span class="tag">BM25</span><span class="tag">Cross-Encoder</span><span class="tag">BEIR Benchmark</span><span class="tag">Gemini / Ollama</span>
             </div>
@@ -238,35 +314,35 @@
 
         <article class="project-featured reveal">
           <div class="pf-content">
-            <p class="project-meta">Backend &middot; a learning project, on purpose</p>
+            <p class="project-meta">Backend Engineering &middot; FastAPI &middot; PostgreSQL &middot; Redis &middot; SSE</p>
             <div class="project-top">
-              <div class="folder-icon">
+              <div class="folder-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Saura-4/llm-chatbot" target="_blank" rel="noopener" aria-label="GitHub repository">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                <a href="https://github.com/Saura-4/llm-chatbot" target="_blank" rel="noopener" aria-label="LLM ChatBot Backend GitHub repository">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.04.77 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 </a>
-                <a class="ext-link" href="https://llm-chatbot-blush.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                <a class="ext-link" href="https://llm-chatbot-blush.vercel.app/" target="_blank" rel="noopener" aria-label="LLM ChatBot Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
                 </a>
               </div>
             </div>
-            <h4>LLM ChatBot Backend</h4>
+            <h3>LLM ChatBot Backend</h3>
             <p>
-              This one isn't an AI breakthrough, and I won't pretend it is. After working on AI
-              systems, I realized I didn't understand the engineering underneath them well enough.
-              So I built a chatbot backend specifically to learn it — properly, piece by piece.
+              Built intentionally to master the backend mechanics underneath AI apps. Designed a multi-user
+              REST API with <strong>FastAPI</strong>, <strong>PostgreSQL</strong>, <strong>SQLAlchemy</strong>, and
+              <strong>Alembic</strong> migrations to own the full request and data-flow lifecycle.
             </p>
             <p>
-              FastAPI and PostgreSQL with SQLAlchemy, JWT authentication, Alembic migrations, a
-              layered CRUD and service structure, conversation and message persistence, Redis
-              caching, and streaming responses over SSE — containerized with Docker and deployed.
-              The rule I set for myself: understand the mental model first, then write the code.
+              Implemented <strong>JWT authentication</strong>, <strong>conversation-level authorization</strong> to enforce
+              strict user data isolation, <strong>Redis caching</strong>, and real-time token streaming over
+              <strong>Server-Sent Events (SSE)</strong>, containerized with <strong>Docker</strong>. Next up: extending
+              it with <strong>LangGraph</strong> agent loops and <strong>LangSmith</strong> tracing/observability.
             </p>
-            <p class="p-note">the engineering under an AI app, built by hand instead of assumed.</p>
+            <p class="p-note">the backend under an AI app &mdash; auth, data isolation, streaming, and observability.</p>
             <div class="tag-row">
-              <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">Redis</span><span class="tag">SSE Streaming</span><span class="tag">Docker</span>
+              <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">Redis</span><span class="tag">JWT Auth</span><span class="tag">SSE</span><span class="tag">Docker</span>
             </div>
           </div>
           <span class="ghost-num" aria-hidden="true">04</span>
@@ -277,43 +353,43 @@
 
     <section id="experience" class="section">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">03.</span> Where I've Worked<i class="rule"></i></h3>
+        <h2 class="section-title reveal"><span class="mono">03.</span> Experience &amp; Education<i class="rule"></i></h2>
         <div class="timeline">
 
           <div class="tl-item reveal">
-            <div class="tl-rail"><i class="tl-dot"></i></div>
+            <div class="tl-rail" aria-hidden="true"><i class="tl-dot"></i></div>
             <div class="tl-body">
               <div class="tl-head">
                 <div>
-                  <h4>Software Engineering Intern — eSim AI Assistant</h4>
-                  <p class="tl-org">FOSSEE Summer Fellowship &middot; IIT Bombay &middot; <a href="https://github.com/FOSSEE/eSim/pull/586" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">PR #586 ↗</a></p>
+                  <h3>Software Engineering Intern &mdash; eSim AI Assistant</h3>
+                  <p class="tl-org">FOSSEE Summer Fellowship &middot; IIT Bombay &middot; <a href="https://github.com/FOSSEE/eSim/pull/586" target="_blank" rel="noopener" class="inline-accent-link">PR #586 &#8599;</a></p>
                 </div>
-                <span class="badge">May – Jul 2026 &middot; Remote</span>
+                <span class="badge">May &ndash; Jul 2026 &middot; Remote</span>
               </div>
               <ul class="tl-list">
-                <li>Redesigned the eSim AI assistant pipeline to extract <strong>circuit and simulation facts deterministically</strong> (netlist structure, simulation setup) before LLM inference, so the model explains verified facts instead of inferring them.</li>
-                <li>Engineered a rule-based <strong>NgSpice error analysis engine</strong> that detects, ranks, and suppresses cascading errors to identify root causes before generating user-facing explanations.</li>
-                <li>Developed an <strong>offline circuit analysis workflow</strong> that generates structured netlist summaries and error reports without requiring an LLM, keeping core analysis available on systems without local AI.</li>
-                <li><strong>Integrated the analysis workflow into eSim</strong>, enabling netlist analysis from the Project Explorer and connecting simulation failures directly to the AI assistant.</li>
+                <li>Replaced raw-netlist LLM prompting with a <strong>deterministic Python fact-extraction pipeline</strong>, eliminating topology hallucinations by having the model explain verified circuit facts.</li>
+                <li>Engineered a rule-based <strong>NgSpice error analysis engine</strong> that detects, ranks, and suppresses cascading simulation errors to surface root causes.</li>
+                <li>Built a <strong>hybrid offline workflow</strong> that presents extracted RAG context and structured diagnostics directly to users without requiring a local LLM.</li>
+                <li>Integrated the analysis pipeline into <strong>eSim's Project Explorer</strong>, connecting simulation failures directly to the assistant UI.</li>
               </ul>
               <div class="tag-row">
-                <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">LLM Pipelines</span><span class="tag">Rule-based Systems</span><span class="tag">eSim</span>
+                <span class="tag">Python</span><span class="tag">NgSpice</span><span class="tag">Deterministic Pipelines</span><span class="tag">Rule-based Systems</span><span class="tag">RAG</span>
               </div>
             </div>
           </div>
 
           <div class="tl-item reveal">
-            <div class="tl-rail"><i class="tl-dot tl-dot-dim"></i></div>
+            <div class="tl-rail" aria-hidden="true"><i class="tl-dot tl-dot-dim"></i></div>
             <div class="tl-body">
               <div class="tl-head">
                 <div>
-                  <h4>B.Tech — Computer Science &amp; Engineering</h4>
+                  <h3>B.Tech &mdash; Computer Science &amp; Engineering</h3>
                   <p class="tl-org">VIT Bhopal University &middot; Cyber Security &amp; Digital Forensics</p>
                 </div>
-                <span class="badge badge-dim">2023 – 2027</span>
+                <span class="badge badge-dim">2023 &ndash; 2027</span>
               </div>
               <ul class="tl-list">
-                <li><strong>CGPA 8.48 / 10</strong> — focused coursework in data structures, DBMS, networks, and security alongside hands-on AI engineering.</li>
+                <li><strong>CGPA 8.48 / 10</strong> &mdash; final-year undergrad focusing on DSA, DBMS, computer networks, and backend systems alongside production AI engineering.</li>
               </ul>
             </div>
           </div>
@@ -324,35 +400,36 @@
 
     <section id="whats-next" class="section section-alt">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">04.</span> What's Next<i class="rule"></i></h3>
+        <h2 class="section-title reveal"><span class="mono">04.</span> Current Focus &amp; Stack<i class="rule"></i></h2>
         <div class="next-lead reveal">
-          <p>Right now, I'm going deeper into the fundamentals.</p>
+          <p><strong>Coding is mostly solved &mdash; the real engineering begins after deployment.</strong></p>
           <p>
-            I'm focusing on CS fundamentals, DSA, backend engineering, and AI agents — learning
-            how these systems work rather than rushing to the next framework.
+            Working with LangGraph and agentic workflows taught me two things: memorizing library APIs is pointless
+            when you can understand the execution model underneath, and an AI agent is fundamentally a
+            <strong>backend loop</strong> &mdash; one that needs cost caps, loop-breaking conditions, and output evaluation.
           </p>
           <p>
-            I'm not trying to lock myself into one particular area yet. If a problem requires me
-            to learn something new, that's part of the process.
+            Right now, I'm focused on <strong>post-deployment systems</strong>: <strong>observability and tracing (LangSmith)</strong>,
+            <strong>backend scaling</strong>, and <strong>DSA / CS fundamentals</strong> as I target full-time SWE and Backend roles.
           </p>
         </div>
-        <p class="section-sub reveal">Tools I've actually used across these projects:</p>
+        <p class="section-sub reveal">Technologies I've shipped and benchmarked with:</p>
         <div class="skills-grid" data-stagger>
           <div class="skill-card reveal">
-            <h5>Languages</h5>
-            <div class="tag-row"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span></div>
+            <h3>Languages</h3>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">SQL</span></div>
           </div>
           <div class="skill-card reveal">
-            <h5>AI / LLM</h5>
-            <div class="tag-row"><span class="tag">RAG</span><span class="tag">Agentic AI</span><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">Ollama</span><span class="tag">ChromaDB</span><span class="tag">BM25</span><span class="tag">Cross-Encoder Reranking</span></div>
+            <h3>Backend &amp; Data</h3>
+            <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">Redis</span><span class="tag">JWT Auth</span><span class="tag">SSE</span></div>
           </div>
           <div class="skill-card reveal">
-            <h5>Backend</h5>
-            <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">JWT Auth</span></div>
+            <h3>AI &amp; Agent Systems</h3>
+            <div class="tag-row"><span class="tag">RAG</span><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">LangSmith</span><span class="tag">ChromaDB</span><span class="tag">BM25</span><span class="tag">Cross-Encoder</span><span class="tag">Ollama</span></div>
           </div>
           <div class="skill-card reveal">
-            <h5>Tools &amp; Infrastructure</h5>
-            <div class="tag-row"><span class="tag">Git</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare D1</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Chrome MV3</span></div>
+            <h3>Cloud &amp; Infra</h3>
+            <div class="tag-row"><span class="tag">AWS</span><span class="tag">Cloudflare Workers</span><span class="tag">Cloudflare D1</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">Linux</span><span class="tag">Chrome MV3</span></div>
           </div>
         </div>
       </div>
@@ -360,33 +437,40 @@
 
     <section id="achievements" class="section">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">05.</span> Achievements &amp; Certifications<i class="rule"></i></h3>
+        <h2 class="section-title reveal"><span class="mono">05.</span> Certifications &amp; Achievements<i class="rule"></i></h2>
         <ul class="ach-list" data-stagger>
           <li class="reveal">
-            <span class="ach-year">2026</span>
+            <span class="ach-year">AWS</span>
             <div>
-              <h5>FOSSEE Summer Fellowship — IIT Bombay</h5>
-              <p>Selected for a nationally competitive open-source software fellowship conducted by IIT Bombay.</p>
+              <h3>AWS Certified Developer &ndash; Associate</h3>
+              <p>Validated cloud application development, serverless, APIs, security, and deployment on AWS. <a href="https://www.credly.com/badges/44f78f44-5e62-46fc-a71e-32100d9c9e5b/public_url" target="_blank" rel="noopener" class="inline-accent-link">View Credly Certificate &#8599;</a></p>
             </div>
           </li>
           <li class="reveal">
             <span class="ach-year">AWS</span>
             <div>
-              <h5>AWS Certified AI Practitioner</h5>
-              <p>Official AWS Certification in AI concepts, generative AI, and foundation models. <a href="https://www.credly.com/badges/7fd83a39-75a6-4b70-8f13-1a3d02664f6b/public_url" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">View Credly Certificate ↗</a></p>
+              <h3>AWS Certified AI Practitioner</h3>
+              <p>Foundational AWS certification in generative AI, foundation models, and responsible AI architecture. <a href="https://www.credly.com/badges/7fd83a39-75a6-4b70-8f13-1a3d02664f6b/public_url" target="_blank" rel="noopener" class="inline-accent-link">View Credly Certificate &#8599;</a></p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="ach-year">2026</span>
+            <div>
+              <h3>FOSSEE Summer Fellowship &mdash; IIT Bombay</h3>
+              <p>Selected for a nationally competitive open-source software engineering fellowship conducted by IIT Bombay.</p>
             </div>
           </li>
           <li class="reveal">
             <span class="ach-year">Live</span>
             <div>
-              <h5>Snip &amp; Ask on the Chrome Web Store</h5>
-              <p>Published extension reaching <strong>2,500+ installs</strong>, <strong>1,300+ active users</strong>, and serving <strong>55,000+ API requests</strong>.</p>
+              <h3>Snip &amp; Ask on the Chrome Web Store</h3>
+              <p>Published and scaled to <strong>1,700+ active users</strong> and <strong>75,000+ backend requests</strong> served via Cloudflare Workers.</p>
             </div>
           </li>
           <li class="reveal">
             <span class="ach-year">NPTEL</span>
             <div>
-              <h5>Blockchain and its Applications</h5>
+              <h3>Blockchain and its Applications</h3>
               <p>Certified with <strong>Top 5%</strong> standing.</p>
             </div>
           </li>
@@ -394,22 +478,25 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
       <div class="container">
-        <h3 class="section-title reveal"><span class="mono">06.</span> Say hello<i class="rule"></i></h3>
-        <p class="section-sub reveal">Have an idea, want to talk about something I've built, or just want to connect?</p>
+        <h2 class="section-title reveal"><span class="mono">06.</span> Say hello<i class="rule"></i></h2>
+        <p class="section-sub reveal">Final-year CS undergrad open to full-time SWE &amp; Backend roles. Always happy to talk systems, backend architecture, or something I've built.</p>
         <div class="contact-links reveal">
           <a href="mailto:saurav04042004@gmail.com">Email
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
           </a>
           <a href="https://github.com/Saura-4" target="_blank" rel="noopener">GitHub
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
           </a>
           <a href="https://linkedin.com/in/saurav-chourasia" target="_blank" rel="noopener">LinkedIn
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/saura_4/" target="_blank" rel="noopener">LeetCode
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
           </a>
           <a href="https://drive.google.com/file/d/1IgwkH9LA6TuF96Rg1M-ELA-TKDEzRC3p/view?usp=sharing" target="_blank" rel="noopener">Resume
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
           </a>
         </div>
       </div>
@@ -423,11 +510,11 @@
     </div>
   </footer>
 
-  <div class="to-top" id="toTop" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
-  </div>
+  <button type="button" class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
+  </button>
 
-  <script src="backgrounds.js?v=4"></script>
-  <script src="script.js?v=4"></script>
+  <script src="backgrounds.js?v=4" defer></script>
+  <script src="script.js?v=5" defer></script>
 </body>
 </html>

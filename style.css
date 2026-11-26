@@ -6,7 +6,7 @@
   --border: #1c1c1c;
   --border-strong: #2e2e2e;
   --text: #ececec;
-  --text-dim: #8f8f8f;
+  --text-dim: #9a9a9a;
   --accent: #e8e8e8;
   --accent-rgb: 232, 232, 232;
   --accent-2: #a3a3a3;
@@ -54,6 +54,46 @@ body::before {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+.skip-link:focus-visible {
+  position: fixed;
+  top: 14px;
+  left: 16px;
+  z-index: 400;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: var(--btn-text);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.inline-accent-link {
+  color: var(--accent);
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border-strong);
+  transition: text-decoration-color 0.2s;
+}
+
+.inline-accent-link:hover {
+  text-decoration-color: var(--accent);
 }
 
 .container {
@@ -120,7 +160,17 @@ body::before {
   transition: color 0.2s;
 }
 
-.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+.nav-links a:hover,
+.nav-links a.active,
+.nav-links a[aria-current="page"] {
+  color: var(--accent);
+}
+
+.nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+}
 
 .menu-btn {
   display: none;
@@ -398,7 +448,7 @@ body::before {
 
 .box-icon svg { width: 19px; height: 19px; stroke: var(--accent); fill: none; stroke-width: 1.8; }
 
-.box h5 { font-size: 1.02rem; font-weight: 700; margin-bottom: 6px; }
+.box h3, .box h5 { font-size: 1.02rem; font-weight: 700; margin-bottom: 6px; }
 
 .box p { color: var(--text-dim); font-size: 0.88rem; }
 
@@ -529,7 +579,7 @@ body::before {
   margin-bottom: 16px;
 }
 
-.tl-head h4 { font-size: 1.22rem; font-weight: 700; letter-spacing: -0.01em; }
+.tl-head h3, .tl-head h4 { font-size: 1.22rem; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
 
 .tl-org { color: var(--accent); font-size: 0.92rem; margin-top: 4px; }
 
@@ -669,9 +719,9 @@ body::before {
 
 .project-links svg { width: 20px; height: 20px; }
 
-.project-card h4, .pf-content h4 { font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.01em; }
+.project-card h3, .project-card h4, .pf-content h3, .pf-content h4 { font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.01em; text-wrap: balance; }
 
-.project-card p, .pf-content p { color: var(--text-dim); font-size: 0.94rem; flex-grow: 1; max-width: 72ch; }
+.project-card p, .pf-content p { color: var(--text-dim); font-size: 0.94rem; flex-grow: 1; max-width: 72ch; text-wrap: pretty; }
 
 .pf-content p + p { margin-top: 12px; }
 
@@ -707,7 +757,7 @@ body::before {
 
 .skill-card:hover { border-color: var(--accent); transform: translateY(-4px); }
 
-.skill-card h5 {
+.skill-card h3, .skill-card h5 {
   font-family: var(--mono);
   font-size: 0.8rem;
   color: var(--accent);
@@ -745,7 +795,7 @@ body::before {
   white-space: nowrap;
 }
 
-.ach-list h5 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+.ach-list h3, .ach-list h5 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
 
 .ach-list p { color: var(--text-dim); font-size: 0.91rem; }
 
@@ -824,10 +874,26 @@ body::before {
   top: 0;
   left: 0;
   height: 3px;
-  width: 0%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   z-index: 300;
   box-shadow: 0 0 12px var(--accent-dim);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    @keyframes grow-progress {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+
+    .progress-bar {
+      animation: grow-progress auto linear;
+      animation-timeline: scroll();
+    }
+  }
 }
 
 /* ---------- Hero starfield canvas ---------- */
