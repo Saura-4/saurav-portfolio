@@ -1,6 +1,6 @@
 # Saurav Chourasia
 
-> Final-year B.Tech Computer Science & Engineering student at VIT Bhopal University (2023–2027, CGPA 8.48/10), based in Bhopal, India. Focused on backend engineering, CS fundamentals, and full-time SWE / Backend roles.
+> Final-year B.Tech Computer Science & Engineering student at VIT Bhopal University (2023–2027, CGPA 8.48/10), based in Bhopal, India. AI Backend Engineer open to full-time AI Engineer, GenAI, and Backend roles.
 
 ## Background & Focus
 - Started building AI tools to remove workflow friction, which led to realizing dependable LLM applications are mostly backend engineering.
@@ -9,7 +9,7 @@
 ## Experience
 - **Software Engineering Intern — eSim AI Assistant**, FOSSEE Summer Fellowship, IIT Bombay (May – Jul 2026, Remote)
   - PR: https://github.com/FOSSEE/eSim/pull/586
-  - Replaced raw-netlist LLM prompting with a deterministic Python fact-extraction pipeline so the model explains verified circuit facts instead of guessing topology.
+  - Replaced raw-netlist LLM prompting with a deterministic Python fact-extraction layer, so the local model explains verified circuit facts instead of inferring topology (side-by-side comparisons judged by a frontier LLM showed more accurate circuit topology descriptions).
   - Engineered a rule-based NgSpice error analysis engine to detect, rank, and suppress cascading errors.
   - Built a hybrid offline workflow surfacing extracted RAG context and structured diagnostics without requiring a local LLM.
   - Integrated the workflow into eSim's Project Explorer.
